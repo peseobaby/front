@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Go Home Theme Front End</title>
+    <!--build:css css/styles.min.css -->
+    <link rel="stylesheet" href="assets/css/danhsachphongdang.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&amp;subset=vietnamese" rel="stylesheet">
+    <!-- endbuild -->
+</head>
+<body>
+    <!-- Header -->
+    <header class="header--host">
+        <div class="container host--nav">
+            <div class="logo">
+                <h1>Travel<span>trip</span></h1>
+            </div>
+            
+            <div class="nav__top">
+                <ul>
+                    <li><img src="assets/images/hanoi.png" alt=""> Đào Huy Hoàng
+                        <ul>
+                            <li><a href="">Logout</a></li>
+                            <li><a href="">Profile</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>  
+            
+        </div>
+        <div class="bg--nav">
+            <nav class="nav__primary">
+                <ul>
+                    <li><a href="" class="active">Bảng thông tin</a></li>
+                    <li><a href="">Lịch</a></li>
+                    <li><a href="">Đặt phòng</a></li>
+                    <li><a href="">Căn hộ của bạn</a></li>
+                    <li><a href="">Căn hộ của bạn</a></li>
+                    <li><a href="">Thanh toán</a></li>
+                </ul>
+        </nav>
+        </div>  
+    </header>
+    
+    <section class="host--content">
+        <div class="container-center">
+            <button class="btn create">Thêm căn hộ mới</button>
+
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs">
+              <li class="nav-item">
+                <a class="nav-link active" data-toggle="tab" href="#all">Tất cả</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#unapproved">Chưa duyệt</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#approved">Đã duyệt</a>
+              </li>
+
+              <div class="sort">
+                <select name="" id="" class="form-control form-control-lg">
+                    <option value="">Order by</option>
+                    <option value="">ID</option>
+                </select>
+              </div>
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tab-content">
+              <div class="tab-pane active" id="all">
+                <div class="item">
+                    <div class="left">
+                        <div class="image">
+                            <img src="assets/images/datlat.png" alt="">
+                        </div>
+                        <div class="details">
+                            <h2>Homestays asdasdasasfsd sadg sdg asdg asdg asdg<span class="active">( Đã duyệt )</span></h2>
+                            <p>Cập nhật lần cuối ngày 17-09-2018</p>
+
+                            <div class="crud">
+                                <a href=""><button class="btn">Cập nhật</button></a>
+                                <a href=""><button class="btn">Xem</button></a>
+                                <a href=""><button class="btn">Đóng</button></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="right">
+                        <div class="end">
+                            <p><span>$255</span> / ngày</p>
+                            <p>Số khách tiêu chuẩn: 5</p>
+                            <p>Số khách tối đa: 10</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="left">
+                        <div class="image">
+                            <img src="assets/images/datlat.png" alt="">
+                        </div>
+                        <div class="details">
+                            <h2>Homestays <span class="inactive">( Chưa duyệt )</span></h2>
+                            <p>Cập nhật lần cuối ngày 17-09-2018</p>
+
+                            <div class="crud">
+                                <a href=""><button class="btn">Cập nhật</button></a>
+                                <a href=""><button class="btn">Xem</button></a>
+                                <a href=""><button class="btn">Đóng</button></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="right">
+                        <div class="end">
+                            <p><span>$255</span> / ngày</p>
+                            <p>Số khách tiêu chuẩn: 5</p>
+                            <p>Số khách tối đa: 10</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="left">
+                        <div class="image">
+                            <img src="assets/images/datlat.png" alt="">
+                        </div>
+                        <div class="details">
+                            <h2>Homestays <span class="pendding">( Đang ch )</span></h2>
+                            <p>Cập nhật lần cuối ngày 17-09-2018</p>
+
+                            <div class="crud">
+                                <a href=""><button class="btn">Cập nhật</button></a>
+                                <a href=""><button class="btn">Xem</button></a>
+                                <a href=""><button class="btn">Đóng</button></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="right">
+                        <div class="end">
+                            <p><span>$255</span> / ngày</p>
+                            <p>Số khách tiêu chuẩn: 5</p>
+                            <p>Số khách tối đa: 10</p>
+                        </div>
+                    </div>
+                </div>
+
+              </div>
+              <div class="tab-pane fade" id="unapproved">
+                <div class="item">
+                    <div class="left">
+                        <div class="image">
+                            <img src="assets/images/datlat.png" alt="">
+                        </div>
+                        <div class="details">
+                            <h2>Homestays <span class="faild">( Chưa duyệt )</span></h2>
+                            <p>Cập nhật lần cuối ngày 17-09-2018</p>
+
+                            <div class="crud">
+                                <a href=""><button class="btn">Cập nhật</button></a>
+                                <a href=""><button class="btn">Xem</button></a>
+                                <a href=""><button class="btn">Đóng</button></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="right">
+                        <div class="end">
+                            <p><span>$255</span> / ngày</p>
+                            <p>Số khách tiêu chuẩn: 5</p>
+                            <p>Số khách tối đa: 10</p>
+                        </div>
+                    </div>
+                </div>
+              </div>
+                  <div class="tab-pane fade" id="approved">
+                    <div class="item">
+                        <div class="left">
+                            <div class="image">
+                                <img src="assets/images/datlat.png" alt="">
+                            </div>
+                            <div class="details">
+                                <h2>Homestays <span class="success">( Đã duyệt )</span></h2>
+                                <p>Cập nhật lần cuối ngày 17-09-2018</p>
+
+                                <div class="crud">
+                                    <a href=""><button class="btn">Cập nhật</button></a>
+                                    <a href=""><button class="btn">Xem</button></a>
+                                    <a href=""><button class="btn">Đóng</button></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="right">
+                            <div class="end">
+                                <p><span>$255</span> / ngày</p>
+                                <p>Số khách tiêu chuẩn: 5</p>
+                                <p>Số khách tối đa: 10</p>
+                            </div>
+                        </div>
+                    </div>
+              </div>
+            </div>
+        </div>
+        
+    </section>
+
+        <!-- Footer -->
+    <footer>
+
+        <section class="footer footer--content">
+            <div class="page">
+                <h5>Like Traveltrip để cập nhật những tin tức mới nhất.</h5>
+            </div>
+
+            <div class="about">
+                <h5>Về chúng tôi</h5>
+
+                <nav>
+                    <ul>
+                        <li><a href="">Giới thiệu</a></li>
+                        <li><a href="">Điều khoản hoạt động</a></li>
+                        <li><a href="">Chính sách bản quyền</a></li>
+                        <li><a href="">Chính sách bảo mật</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="suport">
+                <h5>Hỗ trợ</h5>
+
+                <nav>
+                    <ul>
+                        <li><a href="">Câu hỏi thường gặp</a></li>
+                        <li><a href="">Chính sách hủy</a></li>
+                        <li><a href="">Hướng dẫn sử dụng</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="friend">
+                <h5>Bạn bè liên kết</h5>
+
+                <nav>
+                    <ul>
+                        <li><a href="">Luxstay</a></li>
+                        <li><a href="">VNtrip</a></li>
+                        <li><a href="">Agoda</a></li>
+                    </ul>
+                </nav>
+            </div>
+            
+        </section>
+
+        <section class="footer--bottom">
+            <div class="footer--width">
+                <div class="logo-social">
+                    <img src="" alt="">
+
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-google-plus-g"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-tumblr"></i>
+                </div>
+
+                <div class="copyright">
+                    <h5>Copyright 2018 Travel trip | ALl rights reserved</h5>
+                </div>
+            </div>
+
+        </section>
+    </footer>
+
+    <!--build:js js/main.min.js -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- endbuild -->
+</body>
+</html>
